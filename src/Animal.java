@@ -12,6 +12,13 @@ public abstract class Animal {
                 ", name='" + name + '\'' +
                 ", size=" + size +
                 ", specialCare='" + specialCare + '\'' +
-                '}';
+                "}\n";
+    }
+
+    public Animal(String type, String name, Size size, String specialCare) {
+        this.type = type;
+        this.name = name;
+        this.size = size;
+        this.specialCare = specialCare;
     }
 }
