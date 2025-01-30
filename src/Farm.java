@@ -35,4 +35,11 @@ public class Farm {
             flowers.get(i).chanceOfGrowth = flowers.get(i).chanceOfGrowth *1.1;
         }
     }
+    public void sklidid(){
+        for (int i = flowers.size()-1; i>=0; i--) {
+            if(flowers.get(i).fullyGrown) {
+                flowers.remove(i);
+            }
+        }
+    }
 }
