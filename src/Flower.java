@@ -4,6 +4,7 @@ public abstract class Flower {
     protected double price;
     protected double neededArea;
     protected double chanceOfGrowth;
+    protected boolean fullyGrown = false;
 
     public Flower(String name, double price, double neededArea, double chanceOfGrowth) {
         this.name = name;
@@ -19,7 +20,10 @@ public abstract class Flower {
                 ", price=" + price +
                 ", neededArea=" + neededArea + " m "+
                 ", chanceOfGrowth=" + chanceOfGrowth +
-                "}\n";
+                ", has grown?= "+fullyGrown+"}\n";
     }
 
+    public double getChanceOfGrowth() {
+        return chanceOfGrowth;
+    }
 }

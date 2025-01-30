@@ -23,4 +23,16 @@ public class Farm {
                 "flowers=" + flowers +
                 '}';
     }
+    public void grow(int chance){
+        for (int i = 0; i < flowers.size(); i++) {
+            if(flowers.get(i).chanceOfGrowth<=chance){
+                flowers.get(i).fullyGrown = true;
+            }
+        }
+    }
+    public void zalitFlowers(){
+        for (int i = 0; i < flowers.size(); i++) {
+            flowers.get(i).chanceOfGrowth = flowers.get(i).chanceOfGrowth *1.1;
+        }
+    }
 }
