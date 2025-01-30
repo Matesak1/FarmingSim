@@ -19,6 +19,7 @@ public class Main {
         stodola.pridatZvire("zirafa","Cat",Size.BIG,"Needs high roof");
         stodola.pridatZvire("zralok","Jeff",Size.SMALL,"Lives in water");
         stodola.pridatZvire("clovek","Ondrej",Size.SMALL,"Needs new classes every now and then");
+        stodola.pridatZvire("Zebra","Plej",Size.BIG,"Dont let it on the road");
         System.out.println(stodola.toString());
     }
 }
